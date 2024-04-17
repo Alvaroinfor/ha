@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<p>Hola, ingresa dos números</p>
+<label> a : </label>
+<input id="thing1" type="number" style="font-size: xx-large;" ><br><br>
+<label> b : </label>
+<input id="thing2" type="number" style="font-size: xx-large;"><br><br>
+<button onclick="suma()" style="font-size: xx-large;">a+b</button>
+<button onclick="division1()" style="font-size: xx-large;" >a/b</button>
+<button onclick="producto()" style="font-size: xx-large;" >a*b</button>
+<button onclick="resta1()" style="font-size: xx-large;" >a-b</button>
+<button onclick="resta2()" style="font-size: xx-large;" >b-a</button>
+<button onclick="division2()" style="font-size: xx-large;">b/a</button>
+<button onclick="exponentiation()" style="font-size: xx-large;">a**b</button>
+<p id="demo1"></p>
+
+<script>
+function suma(){
+    a = document.getElementById("thing1").value;
+    b = document.getElementById("thing2").value;
+    document.getElementById("demo1").innerHTML = Number(a) + Number(b);
+}
+function division1(){
+    a = document.getElementById("thing1").value;
+    b = document.getElementById("thing2").value;
+    document.getElementById("demo1").innerHTML = Number(a)/Number(b);
+}
+function producto(){
+    a = document.getElementById("thing1").value;
+    b = document.getElementById("thing2").value;
+    document.getElementById("demo1").innerHTML = Number(a)*Number(b);
+}
+function resta1(){
+    a = document.getElementById("thing1").value;
+    b = document.getElementById("thing2").value;
+    document.getElementById("demo1").innerHTML = Number(a)-Number(b);
+}
+function resta2(){
+    a = document.getElementById("thing1").value;
+    b = document.getElementById("thing2").value;
+    document.getElementById("demo1").innerHTML = Number(b)-Number(a);
+}
+function division2(){
+  a = document.getElementById("thing1").value;
+  b = document.getElementById("thing2").value;
+  document.getElementById("demo1").innerHTML = Number(b)/Number(a);
+}
+function exponentiation(){
+  a = document.getElementById("thing1").value;
+  b = document.getElementById("thing2").value;
+  document.getElementById("demo1").innerHTML = Number(a)**Number(b);
+}
+</script>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Uni-logo_transparente_granate.png" style="width:200px;height:200px;">
+
+</body>
+</html>
